@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 25px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Student Application Form</legend>
+            <table>
+            <tr>
+                <td><label for="s">First Name</label>
+                <td><input type="text" name="s" value ="Siddu" required pattern="[A-Za-z]+"><br>
+            </tr>
+            <tr>
+                <td><label for="e">Last Name    </label></td>
+            <td><input type="text" name="e"  required pattern="[A-Za-z]+"></td><br>
+            </tr>
+             <tr>
+               <td> <label for="a">CSN Number  </label></td>
+            <td> <input type="text" id="a" name="a" size="12" maxlength="10" pattern="[0-9]{10}" value="2024070021"  title="Enter correct information"></td>
+            </tr>
+            <tr>
+                <td><label>DOB     </label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+        <td> <label>Gender </label></td><br>
+               <td> <input type="radio" name="Gender" checked>Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Other</td><br>
+            </tr>
+            <tr>
+               <td> <label>Semester     </label></td>
+            <td><select>
+                    <option value="1">1<sup>st</sup> SEM</option>
+                    <option value="2">2<sup>nd</sup> SEM</option>
+                    <option value="3">3<sup>rd</sup> SEM</option>
+                    <option value="4">4<sup>th</sup> SEM</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Password </label></td>
+            <td><input type="password"><br></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Submit"></td>
+        <td>  <input type="reset" value="Reset"></td>
+            </tr>            
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
